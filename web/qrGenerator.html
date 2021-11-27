@@ -6,6 +6,8 @@
     content="IE=edge">
     <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+    href="./favicon.png">
     <title>QR generator</title>
     <style>
         #qrcode {
@@ -17,6 +19,7 @@
 </head>
 
 <body>
+    <!-- https://davidshimjs.github.io/qrcodejs/ -->
     <input id="text" type="text"
     value="QRcodeGenerator"
     style="width:80%" /><br />
@@ -31,7 +34,7 @@
             var elText = document.getElementById("text");
 
             if (!elText.value) {
-                alert("Input a text");
+                // alert("Input a text");
                 elText.focus();
                 return;
             }

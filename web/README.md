@@ -1,0 +1,3 @@
+To do:
+
+Simplify code
