@@ -1,0 +1,30 @@
+<head>
+    <script
+    src="jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div id="div1"
+    style="width: 100px; height: 100px; top:0; left:0; background:#e53935 ; position:absolute;">
+    </div>
+    <div id="div2"
+    style="width: 100px; height: 100px; top:0; left:300px; background:#4527a0 ; position:absolute;">
+    </div>
+    <svg>
+        <line id="line1" stroke="red" />
+    </svg>
+    <script>
+        line1 = $('#line1');
+        div1 = $('#div1');
+        div2 = $('#div2');
+        var pos1 = div1.position();
+        var pos2 = div2.position();
+        line1
+            .attr('x1', pos1.left)
+            .attr('y1', pos1.top)
+            .attr('x2', pos2.left)
+            .attr('y2', pos2.top);
+
+
+    </script>
+</body>
